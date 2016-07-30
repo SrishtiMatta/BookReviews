@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:layout_marginTop="50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:text="Search: "
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textColor="@color/colorPrimaryDark">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By Genre"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:id="@+id/genreRadioButton"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By title"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/titleRadioButton"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Search By"
+        android:layout_marginLeft="75dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/searchQueryEditText"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/submitButton" />
+
+
+</LinearLayout>
